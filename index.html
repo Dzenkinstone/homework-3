@@ -12,16 +12,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-      <!--Fonts ends-->
-      <!--Normalize starts-->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-      />
-      <!--Normalize ends-->
+    <!--Fonts ends-->
+    <!--Normalize starts-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Normalize ends-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -29,9 +29,7 @@
     <!--Header-->
     <header class="header">
       <div class="container header-container">
-        <a class="site-logo link" href="./index.html"
-          ><span class="letter">Web</span>Studio</a
-        >
+        <a class="site-logo link" href="./index.html"><span class="letter">Web</span>Studio</a>
         <nav class="header-nav">
           <ul class="header-list list">
             <li>
@@ -54,9 +52,7 @@
             >
           </li>
           <li>
-            <a
-              class="header-e-mail contacts-color link"
-              href="tel:+380961111111"
+            <a class="header-e-mail contacts-color link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
@@ -76,53 +72,37 @@
         <div class="container">
           <h2 class="hidden">Особенности нашей компании</h2>
           <ul class="list peculiarities-column">
-            <li class="link peculiarities-item-column">
-              <h3 class="peculiarities-title peculiarities-title-column">
-                Внимание к деталям
-              </h3>
-              <p class="peculiarities-text peculiarities-text-column">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+            <li class="peculiarities-item-column">
+              <h3 class="peculiarities-title">Внимание к деталям</h3>
+              <p class="peculiarities-text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="link peculiarities-item-column">
-              <h3 class="peculiarities-title peculiarities-title-column">
-                Пунктуальность
-              </h3>
-              <p class="peculiarities-text peculiarities-text-column">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+            <li class="peculiarities-item-column">
+              <h3 class="peculiarities-title">Пунктуальность</h3>
+              <p class="peculiarities-text">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="link peculiarities-item-column">
-              <h3 class="peculiarities-title peculiarities-title-column">
-                Планирование
-              </h3>
-              <p class="peculiarities-text peculiarities-text-column">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
+            <li class="peculiarities-item-column">
+              <h3 class="peculiarities-title">Планирование</h3>
+              <p class="peculiarities-text">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="link peculiarities-item-column">
-              <h3 class="peculiarities-title peculiarities-title-column">
-                Современные технологии
-              </h3>
-              <p class="peculiarities-text peculiarities-text-column">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+            <li class="peculiarities-item-column">
+              <h3 class="peculiarities-title">Современные технологии</h3>
+              <p class="peculiarities-text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
         </div>
       </section>
       <!--What we do-->
-      <section class="what-we-do">
+      <section class="what-we-do section">
         <div class="container">
-          <ul class="list"">
-            <li class="what-we-do-title-list">
-              <h2 class="what-we-do-title">Чем мы занимаемся</h2>
-            </li>
-          </ul>
+          <h2 class="what-we-do-title">Чем мы занимаемся</h2>
           <ul class="what-we-do-list list">
             <li class="what-we-do-item link">
               <img
@@ -155,8 +135,8 @@
         </div>
       </section>
       <!--Our team-->
-      <section class="our-team">
-        <div class="container our-team-container">
+      <section class="our-team section">
+        <div class="container">
           <h2 class="our-team-title">Наша команда</h2>
           <ul class="our-team-list list">
             <li class="our-team-item link">
@@ -167,8 +147,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="our-team-stuff">Игорь Демьяненко</h3>
-              <p class="our-team-professions">Product Designer</p>
+              <div class="our-team-container">
+                <h3 class="our-team-stuff">Игорь Демьяненко</h3>
+                <p class="our-team-professions">Product Designer</p>
+              </div>
             </li>
             <li class="our-team-item link">
               <img
@@ -178,8 +160,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="our-team-stuff">Ольга Репина</h3>
-              <p class="our-team-professions">Frontend Developer</p>
+              <div class="our-team-container">
+                <h3 class="our-team-stuff">Ольга Репина</h3>
+                <p class="our-team-professions">Frontend Developer</p>
+              </div>
             </li>
             <li class="our-team-item link">
               <img
@@ -189,8 +173,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="our-team-stuff">Николай Тарасов</h3>
-              <p class="our-team-professions">Marketing</p>
+              <div class="our-team-container">
+                <h3 class="our-team-stuff">Николай Тарасов</h3>
+                <p class="our-team-professions">Marketing</p>
+              </div>
             </li>
             <li class="our-team-item link">
               <img
@@ -200,8 +186,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="our-team-stuff">Михаил Ермаков</h3>
-              <p class="our-team-professions">UI Designer</p>
+              <div class="our-team-container">
+                <h3 class="our-team-stuff">Михаил Ермаков</h3>
+                <p class="our-team-professions">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
