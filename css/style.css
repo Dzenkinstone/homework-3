@@ -14,9 +14,10 @@
   --black-bg-cl: #2f303a;
 
   /* others */
+  --border: 1px solid #eeeeee;
 }
 
-.body {
+body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
   background-color: var(--white-bg-cl);
@@ -45,8 +46,23 @@ h1,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 .list {
@@ -69,7 +85,7 @@ h6 {
 /*Header*/
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: var(--border);
 }
 
 .header-container {
@@ -87,22 +103,12 @@ h6 {
   gap: 50px;
 }
 
-.header-item {
-  padding: 0 32px;
-}
-
 .site-logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
-}
-
-.header-site-logo {
-  margin-top: 25px;
 }
 
 .header-phone,
@@ -135,11 +141,8 @@ h6 {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  outline-offset: -2px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .studio {
@@ -150,26 +153,18 @@ h6 {
 
 .main {
   background-color: var(--black-bg-cl);
-  margin-bottom: 94px;
-}
-
-.main-title-item {
-  text-align: center;
-  padding-top: 200px;
+  padding: 200px;
 }
 
 .main-title {
+  width: 696px;
+  margin: 0 auto;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--btn-txt-cl);
   text-transform: uppercase;
-}
-
-.main-padding {
-  padding-top: 30px;
-  padding-bottom: 200px;
 }
 
 .what-we-do-title,
@@ -179,17 +174,17 @@ h6 {
   line-height: 1.1;
 }
 
-.main-item {
-  padding-left: 478px;
-}
-
 .main-btn {
   padding: 10px 32px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.88;
   display: flex;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 30px;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -204,10 +199,6 @@ h6 {
 }
 
 /*Peculiarities*/
-
-.peculiarities-section {
-  margin-bottom: 94px;
-}
 
 .peculiarities-column {
   display: flex;
@@ -389,7 +380,7 @@ h6 {
 }
 
 .portfolio-item {
-  border: 1px solid #eeeeee;
+  border: var(--border);
   background-color: #ffffff;
 }
 
