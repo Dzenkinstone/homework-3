@@ -17,6 +17,7 @@
   --border: 1px solid #eeeeee;
   --background-color: #f5f4fa;
   --border-radius: 4px;
+  --padding: 20px 24px;
 }
 
 body {
@@ -27,7 +28,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-.hidden {
+.hidden,
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -155,7 +157,7 @@ address {
 
 .main {
   background-color: var(--black-bg-cl);
-  padding: 200px;
+  padding: 200px 0;
 }
 
 .main-title {
@@ -220,6 +222,10 @@ address {
 
 /*What we do*/
 
+.what-we-do {
+  padding-top: 0;
+}
+
 .what-we-do-title {
   text-align: center;
   font-size: 36px;
@@ -227,7 +233,7 @@ address {
 }
 
 .what-we-do-list {
-  padding-top: 50px;
+  margin-top: 50px;
   display: flex;
   gap: 30px;
 }
@@ -239,7 +245,6 @@ address {
 }
 
 .our-team-title {
-  margin: 0 50px;
   text-align: center;
   font-size: 36px;
   line-height: 1.1;
@@ -289,10 +294,6 @@ address {
   margin-top: 20px;
 }
 
-.footer-list {
-  padding-top: 20px;
-}
-
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -323,7 +324,7 @@ address {
 
 /*Portfolio*/
 .portfolio-btn-list {
-  margin-left: 280px;
+  justify-content: center;
   display: flex;
   gap: 8px;
 }
@@ -361,19 +362,13 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-top: 50px;
-}
-
-.portfolio-text-padding {
-  padding: 20px 24px;
+  margin-top: 50px;
 }
 
 .border-column {
+  padding: var(--padding);
   border: var(--border);
-}
-
-.portfolio-item {
-  background-color: #ffffff;
+  border-top: none;
 }
 
 .portfolio-title {
